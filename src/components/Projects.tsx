@@ -1,12 +1,13 @@
 import { useState } from "react";
-
+import { images } from "../constants/images";
+ 
 interface Project {
   id: number;
   title: string;
   description: string;
   image: string;
   tags: string[];
-  category: "Web" | "Mobile" | "Tools";
+  category: "Develoment" | "Media";
   link: string;
 }
 
@@ -15,61 +16,61 @@ const projects: Project[] = [
     id: 1,
     title: "Nexus Cloud Engine",
     description: "Next-generation distributed computation platform.",
-    image: "/projects/nexus-cloud-engine.jpg",
+    image:  images.develoment1 ,
     tags: ["React", "Node.js"],
-    category: "Web",
+    category: "Develoment",
     link: "#",
   },
   {
     id: 2,
     title: "Aura Wallet",
     description: "Biometric-first decentralized finance mobile app.",
-    image: "/projects/aura-wallet.jpg",
+    image: images.develoment2,
     tags: ["Mobile", "SwiftUI"],
-    category: "Mobile",
+    category: "Develoment",
     link: "#",
   },
   {
     id: 3,
     title: "Synthetix CLI",
     description: "Advanced command-line utility for automation.",
-    image: "/projects/synthetix-cli.jpg",
+    image: images.develoment3,
     tags: ["Tools", "Rust"],
-    category: "Tools",
+    category: "Develoment",
     link: "#",
   },
   {
     id: 4,
     title: "OmniDB",
     description: "Global real-time sync database layer.",
-    image: "/projects/omnidb.jpg",
+    image: images.develoment4,
     tags: ["Web", "Go"],
-    category: "Web",
+    category: "Develoment",
     link: "#",
   },
   {
     id: 5,
     title: "Flux Mobile",
     description: "Fluid interaction framework for mobile native apps.",
-    image: "/projects/flux-mobile.jpg",
+    image: images.develoment5,
     tags: ["Mobile", "Flutter"],
-    category: "Mobile",
+    category: "Media",
     link: "#",
   },
   {
     id: 6,
     title: "Prism AI",
     description: "Image recognition and enhancement toolkit.",
-    image: "/projects/prism-ai.jpg",
+    image: images.develoment6,
     tags: ["Tools", "Python"],
-    category: "Tools",
+    category: "Media",
     link: "#",
   },
 ];
 
-type FilterType = "All" | "Web" | "Mobile" | "Tools";
+type FilterType = "All" | "Develoment" | "Media";
 
-const filters: FilterType[] = ["All", "Web", "Mobile", "Tools"];
+const filters: FilterType[] = ["All", "Develoment", "Media"];
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<FilterType>("All");
