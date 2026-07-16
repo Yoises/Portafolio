@@ -81,43 +81,43 @@ const projects: Project[] = [
     videos: [
       {
         id: 1,
-        title: "Gesture-driven navigation",
+        title: "UnderLandWorld Blender",
         description:
-          "A look at Flux's core gesture system — swipe, drag, and release transitions between screens with physics-based momentum instead of fixed easing curves.",
+          "3D animated short created in Blender, depicting Underland Beneath the Sea — a mystical hidden world beneath the ocean's surface, its landscapes lit by the glow of bioluminescent creatures casting ethereal light across coral forests, sunken cities, and mysterious caves. Modeling, lighting, and rendering were handled entirely in Blender to build the underwater environment and its atmospheric depth, while the accompanying sound design and score were composed and mixed in Reaper to match the pacing and otherworldly mood of the animation.",
         thumbnail: images.develoment5,
-        embedUrl: "https://youtu.be/8quu6hH5koU?si=3tLDiuo5DI_JT4U6",
+        embedUrl: "https://www.youtube.com/watch?v=8quu6hH5koU",
       },
       {
         id: 2,
-        title: "Shared element transitions",
+        title: "Trabalho rotobrush",
         description:
-          "How elements persist and morph across screen changes, keeping spatial continuity so the interface never feels like it's cutting between disconnected views.",
+          "Rotobrush work in After Effects, isolating a moving subject frame by frame from its background without traditional masking. A base stroke defines the initial foreground boundary, Refine Edge cleans up fine detail along hair and motion blur, and the segmentation is propagated across the sequence with manual touch-ups on frames where tracking drifts. The resulting matte is frozen and exported as a clean alpha layer, ready to composite over a new background.",
         thumbnail: images.develoment5,
-        embedUrl: "https://youtu.be/-XgsSAXKkvc?si=l0cMiIbdORZiT4vS",
+        embedUrl: "https://www.youtube.com/watch?v=-XgsSAXKkvc",
       },
       {
         id: 3,
-        title: "Micro-interactions library",
+        title: "Firebender After Effects",
         description:
-          "A tour of the built-in micro-interaction presets — button feedback, pull-to-refresh, and loading states — all tunable through a single config object.",
+          "Fire simulation created in After Effects using a particle system to generate the 'Firebender' effect, driving organic flame movement, embers, and heat distortion through particle emitters tuned for velocity, turbulence, and lifespan. Layered particle passes were composited with color grading and glow to build the intensity and warmth of the fire, giving the animation the fluid, elemental motion associated with bending fire as a controlled force.",
         thumbnail: images.develoment5,
-        embedUrl: "https://youtu.be/zkO9mQyxtAo?si=F0hAGz7ORaQrKFj_",
+        embedUrl: "https://www.youtube.com/watch?v=zkO9mQyxtAo",
       },
       {
         id: 4,
-        title: "Micro-interactions library",
+        title: "WaterBender",
         description:
-          "A tour of the built-in micro-interaction presets — button feedback, pull-to-refresh, and loading states — all tunable through a single config object.",
+          "Water simulation created in After Effects using a particle system to generate the 'Waterbender' effect, driving fluid, flowing motion through particle emitters tuned for velocity, turbulence, and lifespan to mimic the behavior of controlled water. Layered particle passes were composited with color grading, transparency, and glow to build depth and movement, giving the animation the fluid, elemental motion associated with bending water as a controlled force.",
         thumbnail: images.develoment5,
-        embedUrl: "https://youtu.be/dQI767afn4Y?si=6nRBXRuUBGHOqHmD",
+        embedUrl: "https://www.youtube.com/watch?v=dQI767afn4Y",
       },
       {
         id: 5,
-        title: "Micro-interactions library",
+        title: "King Drink",
         description:
-          "A tour of the built-in micro-interaction presets — button feedback, pull-to-refresh, and loading states — all tunable through a single config object.",
+          "Product animation created in Blender for a fictional beverage brand, King, showcasing a refreshing drink through 3D modeling, lighting, and rendering to capture the look and appeal of the product — condensation, liquid shading, and material work built to sell the sense of a cold, refreshing drink. The rendered footage was then brought into After Effects for final editing, color grading, and compositing to polish the sequence into a finished piece.",
         thumbnail: images.develoment5,
-        embedUrl: "https://youtu.be/k6p7tO-Ui74?si=F4_2oCww_mDJaaKB",
+        embedUrl: "https://www.youtube.com/watch?v=k6p7tO-Ui74",
       },
     ],
   },
