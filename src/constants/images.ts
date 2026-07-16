@@ -9,6 +9,7 @@ import develoment5 from "../assets/image/circuit-path.png";
 import develoment6 from "../assets/image/circuit-path.png";
 import develoment7 from "../assets/image/circuit-path.png";
 import MotionLab from "../assets/image/MotionLab.png";
+import DesignLab from "../assets/image/DesignLab.png";
 
 export const images = {
      profile:  profileImage,
@@ -22,5 +23,6 @@ export const images = {
      develoment6:develoment6,
      develoment7:develoment7,
      MotionLab: MotionLab,
+     DesignLab: DesignLab,
 
 };

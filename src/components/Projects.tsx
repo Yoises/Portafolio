@@ -11,7 +11,7 @@ interface Project {
   image: string;
   tags: string[];
   category: "Develoment" | "Media";
-  type: "site" | "app";
+  type: "site" | "app" | "media";
   link: string;
   videos?: ProjectVideo[];
 }
@@ -76,7 +76,7 @@ const projects: Project[] = [
     image: images.MotionLab,
     tags: ["after effect", "blender"],
     category: "Media",
-    type: "app",
+    type: "media",
     link: "#",
     videos: [
       {
@@ -118,12 +118,12 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    title: "Prism AI",
-    description: "Image recognition and enhancement toolkit.",
-    image: images.develoment6,
-    tags: ["Tools", "Python"],
+    title: "Design Lab",
+    description: "Espacio de trabajo dedicado al diseño digital de aplicaciones y sitios web. Un flujo creativo que abarca desde la conceptualización de interfaces (UI/UX), wireframes y sistemas de diseño, hasta la creación de prototipos interactivos, layouts responsivos y experiencias visuales pulidas —tanto para apps móviles como para plataformas web.",
+    image: images.DesignLab,
+    tags: ["Figma", "Mobile"],
     category: "Media",
-    type: "site",
+    type: "media",
     link: "#",
   },
 ];

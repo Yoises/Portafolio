@@ -8,7 +8,7 @@ export interface ModalProject {
   image: string;
   tags: string[];
   link: string;
-  type?: "site" | "app";
+  type?: "site" | "app" | "media";
 }
 
 interface ProjectModalProps {
