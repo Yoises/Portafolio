@@ -24,6 +24,7 @@ const categories: SkillCategory[] = [
       { name: "Tailwind", icon: "palette" },
       { name: "CSS", icon: "css" },
       { name: "HTML", icon: "html" },
+      { name: "Bootstrap", icon: "palette" },
       
     ],
   },

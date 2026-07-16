@@ -34,7 +34,7 @@ const projects: Project[] = [
     tags: ["React", "Boostrap"],
     category: "Develoment",
     type: "site",
-    link: "#",
+    link: "https://befitness-ten.vercel.app/",
   },
   {
     id: 2,
@@ -125,7 +125,7 @@ const projects: Project[] = [
   {
     id: 6,
     title: "Lumos",
-    description: "Un diseño de interfaz para una aplicación de aprendizaje de idiomas. Explora la experiencia de usuario completa, desde la selección del idioma y el nivel inicial, hasta las lecciones interactivas, el seguimiento de progreso y los sistemas de gamificación que mantienen al usuario motivado día a día.",
+    description: "An interface design for a language-learning app. Explore the complete user experience, from selecting the language and starting level, to interactive lessons, progress tracking, and the gamification systems that keep users motivated day after day.",
     image: images.DesignLab,
     tags: ["Figma", "Mobile"],
     category: "Media",
