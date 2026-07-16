@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { images } from "../constants/images";
 import ProjectModal from "./Projectmodal";
+import VideoCarouselModal, { type ProjectVideo } from "./Videocarouselmodal";
 
 interface Project {
   id: number;
@@ -12,6 +13,7 @@ interface Project {
   category: "Develoment" | "Media";
   type: "site" | "app";
   link: string;
+  videos?: ProjectVideo[];
 }
 
 const projects: Project[] = [
@@ -76,6 +78,32 @@ const projects: Project[] = [
     category: "Media",
     type: "app",
     link: "#",
+    videos: [
+      {
+        id: 1,
+        title: "Gesture-driven navigation",
+        description:
+          "A look at Flux's core gesture system — swipe, drag, and release transitions between screens with physics-based momentum instead of fixed easing curves.",
+        thumbnail: images.develoment5,
+        embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      },
+      {
+        id: 2,
+        title: "Shared element transitions",
+        description:
+          "How elements persist and morph across screen changes, keeping spatial continuity so the interface never feels like it's cutting between disconnected views.",
+        thumbnail: images.develoment5,
+        embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      },
+      {
+        id: 3,
+        title: "Micro-interactions library",
+        description:
+          "A tour of the built-in micro-interaction presets — button feedback, pull-to-refresh, and loading states — all tunable through a single config object.",
+        thumbnail: images.develoment5,
+        embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      },
+    ],
   },
   {
     id: 6,
@@ -178,7 +206,15 @@ export default function Projects() {
         ))}
       </div>
 
-      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+      {selectedProject?.videos ? (
+        <VideoCarouselModal
+          title={selectedProject.title}
+          videos={selectedProject.videos}
+          onClose={() => setSelectedProject(null)}
+        />
+      ) : (
+        <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+      )}
     </main>
   );
 }
