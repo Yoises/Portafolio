@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import { getYouTubeEmbedUrl, getYouTubeThumbnail } from "../constants/Youtube";
 
 export interface ProjectVideo {
   id: number;
   title: string;
   description: string;
-  thumbnail: string;
-  embedUrl: string; // YouTube/Vimeo embed URL, e.g. https://www.youtube.com/embed/VIDEO_ID
+  /** Optional: if omitted, the official YouTube thumbnail is derived from embedUrl */
+  thumbnail?: string;
+  embedUrl: string; // Any YouTube URL (watch, youtu.be, or embed) — normalized automatically
 }
 
 interface VideoCarouselModalProps {
@@ -93,7 +95,7 @@ export default function VideoCarouselModal({
           <div className="aspect-video overflow-hidden rounded-xl bg-black">
             <iframe
               key={current.id}
-              src={current.embedUrl}
+              src={getYouTubeEmbedUrl(current.embedUrl)}
               title={current.title}
               className="w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -147,7 +149,7 @@ export default function VideoCarouselModal({
                 }`}
               >
                 <img
-                  src={video.thumbnail}
+                  src={video.thumbnail || getYouTubeThumbnail(video.embedUrl)}
                   alt={video.title}
                   className="w-full h-full object-cover"
                 />

@@ -84,7 +84,6 @@ const projects: Project[] = [
         title: "UnderLandWorld Blender",
         description:
           "3D animated short created in Blender, depicting Underland Beneath the Sea — a mystical hidden world beneath the ocean's surface, its landscapes lit by the glow of bioluminescent creatures casting ethereal light across coral forests, sunken cities, and mysterious caves. Modeling, lighting, and rendering were handled entirely in Blender to build the underwater environment and its atmospheric depth, while the accompanying sound design and score were composed and mixed in Reaper to match the pacing and otherworldly mood of the animation.",
-        thumbnail: images.develoment5,
         embedUrl: "https://www.youtube.com/watch?v=8quu6hH5koU",
       },
       {
@@ -92,7 +91,6 @@ const projects: Project[] = [
         title: "Trabalho rotobrush",
         description:
           "Rotobrush work in After Effects, isolating a moving subject frame by frame from its background without traditional masking. A base stroke defines the initial foreground boundary, Refine Edge cleans up fine detail along hair and motion blur, and the segmentation is propagated across the sequence with manual touch-ups on frames where tracking drifts. The resulting matte is frozen and exported as a clean alpha layer, ready to composite over a new background.",
-        thumbnail: images.develoment5,
         embedUrl: "https://www.youtube.com/watch?v=-XgsSAXKkvc",
       },
       {
@@ -100,7 +98,6 @@ const projects: Project[] = [
         title: "Firebender After Effects",
         description:
           "Fire simulation created in After Effects using a particle system to generate the 'Firebender' effect, driving organic flame movement, embers, and heat distortion through particle emitters tuned for velocity, turbulence, and lifespan. Layered particle passes were composited with color grading and glow to build the intensity and warmth of the fire, giving the animation the fluid, elemental motion associated with bending fire as a controlled force.",
-        thumbnail: images.develoment5,
         embedUrl: "https://www.youtube.com/watch?v=zkO9mQyxtAo",
       },
       {
@@ -108,7 +105,6 @@ const projects: Project[] = [
         title: "WaterBender",
         description:
           "Water simulation created in After Effects using a particle system to generate the 'Waterbender' effect, driving fluid, flowing motion through particle emitters tuned for velocity, turbulence, and lifespan to mimic the behavior of controlled water. Layered particle passes were composited with color grading, transparency, and glow to build depth and movement, giving the animation the fluid, elemental motion associated with bending water as a controlled force.",
-        thumbnail: images.develoment5,
         embedUrl: "https://www.youtube.com/watch?v=dQI767afn4Y",
       },
       {
@@ -116,7 +112,6 @@ const projects: Project[] = [
         title: "King Drink",
         description:
           "Product animation created in Blender for a fictional beverage brand, King, showcasing a refreshing drink through 3D modeling, lighting, and rendering to capture the look and appeal of the product — condensation, liquid shading, and material work built to sell the sense of a cold, refreshing drink. The rendered footage was then brought into After Effects for final editing, color grading, and compositing to polish the sequence into a finished piece.",
-        thumbnail: images.develoment5,
         embedUrl: "https://www.youtube.com/watch?v=k6p7tO-Ui74",
       },
     ],
