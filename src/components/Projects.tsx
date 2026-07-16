@@ -1,51 +1,70 @@
 import { useState } from "react";
 import { images } from "../constants/images";
- 
+import ProjectModal from "./Projectmodal";
+
 interface Project {
   id: number;
   title: string;
   description: string;
+  fullDescription?: string;
   image: string;
   tags: string[];
   category: "Develoment" | "Media";
+  type: "site" | "app";
   link: string;
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "befitness",
-    description: "A one-page website for a fictional gym. Clean, energetic landing page showcasing membership plans, class schedules, and trainer profiles — built to convert visitors into sign-ups.",
-    image:  images.develoment1 ,
+    title: "Befitness",
+    description:
+      "A one-page website for a fictional gym. Clean, energetic landing page showcasing membership plans, class schedules, and trainer profiles — built to convert visitors into sign-ups.",
+    fullDescription:
+      "Befitness is a single-page website built for a fictional gym brand. The page walks visitors through membership tiers, weekly class schedules, and trainer bios, closing with a clear sign-up call to action. Built with React and Bootstrap, with a focus on fast load times and a layout that reads clearly on mobile, where most gym sign-ups happen.",
+    image: images.develoment1,
     tags: ["React", "Boostrap"],
     category: "Develoment",
+    type: "site",
     link: "#",
   },
   {
     id: 2,
     title: "Philosopher",
-    description: "An AI-powered entertainment platform. Combines AI-driven content with an interactive experience, blending philosophy and entertainment into an engaging application.",
+    description:
+      "An AI-powered entertainment platform. Combines AI-driven content with an interactive experience, blending philosophy and entertainment into an engaging application.",
+    fullDescription:
+      "Philosopher is an AI-powered entertainment platform that turns philosophical ideas into interactive, conversational experiences. Users can explore different schools of thought, debate positions with an AI persona, and get bite-sized explanations of complex concepts — built as a web app with an emphasis on engaging, readable AI-generated content.",
     image: images.develoment2,
     tags: ["Web", "AI"],
     category: "Develoment",
+    type: "site",
     link: "#",
   },
   {
     id: 3,
     title: "Protego",
-    description: "A landing page for an insurance company. Trust-focused design highlighting coverage plans, quote requests, and customer testimonials, aimed at converting leads into policyholders.",
+    description:
+      "A landing page for an insurance company. Trust-focused design highlighting coverage plans, quote requests, and customer testimonials, aimed at converting leads into policyholders.",
+    fullDescription:
+      "Protego is a landing page for a fictional insurance company. The design leans on trust signals — clear coverage breakdowns, a simple quote request flow, and customer testimonials — to move visitors from browsing to requesting a quote. Built with React and Tailwind CSS for a fast, componentized, easily themeable layout.",
     image: images.develoment3,
     tags: ["Web", "tailwind"],
     category: "Develoment",
+    type: "site",
     link: "#",
   },
   {
     id: 4,
-    title: "Salve ",
-    description: "A faith-based community app for prayer groups. Connects members of religious communities, enabling group prayer coordination, event scheduling, and spiritual engagement.",
+    title: "Salve",
+    description:
+      "A faith-based community app for prayer groups. Connects members of religious communities, enabling group prayer coordination, event scheduling, and spiritual engagement.",
+    fullDescription:
+      "Salve is a mobile app that connects members of religious communities around shared prayer. Groups can coordinate prayer sessions, schedule community events, and stay engaged with their congregation between in-person meetings. Built with Expo Go for fast cross-platform delivery on iOS and Android.",
     image: images.develoment4,
     tags: ["Mobile", "Expo Go"],
     category: "Develoment",
+    type: "app",
     link: "#",
   },
   {
@@ -55,6 +74,7 @@ const projects: Project[] = [
     image: images.develoment5,
     tags: ["Mobile", "Flutter"],
     category: "Media",
+    type: "app",
     link: "#",
   },
   {
@@ -64,16 +84,18 @@ const projects: Project[] = [
     image: images.develoment6,
     tags: ["Tools", "Python"],
     category: "Media",
+    type: "site",
     link: "#",
   },
 ];
 
 type FilterType = "All" | "Media" | "Develoment";
 
-const filters: FilterType[] = ["All","Media", "Develoment" ];
+const filters: FilterType[] = ["All", "Media", "Develoment"];
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<FilterType>("All");
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const filteredProjects =
     activeFilter === "All"
@@ -115,7 +137,8 @@ export default function Projects() {
         {filteredProjects.map((project) => (
           <article
             key={project.id}
-            className="group relative overflow-hidden rounded-2xl glass-card flex flex-col h-full shadow-sm border border-outline-variant/30 hover:border-primary-container/40 transition-colors"
+            onClick={() => setSelectedProject(project)}
+            className="group relative overflow-hidden rounded-2xl glass-card flex flex-col h-full shadow-sm border border-outline-variant/30 hover:border-primary-container/40 transition-colors cursor-pointer"
           >
             <div className="aspect-video overflow-hidden">
               <img
@@ -127,12 +150,15 @@ export default function Projects() {
             <div className="p-6 flex flex-col grow">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="font-headline text-2xl text-on-surface">{project.title}</h3>
-                <a
-                  href={project.link}
+                <span
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedProject(project);
+                  }}
                   className="text-primary-container transition-transform hover:scale-110 active:scale-95"
                 >
                   <span className="material-symbols-outlined">open_in_new</span>
-                </a>
+                </span>
               </div>
               <p className="text-on-surface-variant font-body text-base mb-6 grow">
                 {project.description}
@@ -151,6 +177,8 @@ export default function Projects() {
           </article>
         ))}
       </div>
+
+      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
     </main>
   );
 }
