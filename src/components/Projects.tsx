@@ -85,7 +85,7 @@ const projects: Project[] = [
         description:
           "A look at Flux's core gesture system — swipe, drag, and release transitions between screens with physics-based momentum instead of fixed easing curves.",
         thumbnail: images.develoment5,
-        embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        embedUrl: "https://youtu.be/8quu6hH5koU?si=3tLDiuo5DI_JT4U6",
       },
       {
         id: 2,
@@ -93,7 +93,7 @@ const projects: Project[] = [
         description:
           "How elements persist and morph across screen changes, keeping spatial continuity so the interface never feels like it's cutting between disconnected views.",
         thumbnail: images.develoment5,
-        embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        embedUrl: "https://youtu.be/-XgsSAXKkvc?si=l0cMiIbdORZiT4vS",
       },
       {
         id: 3,
@@ -101,7 +101,23 @@ const projects: Project[] = [
         description:
           "A tour of the built-in micro-interaction presets — button feedback, pull-to-refresh, and loading states — all tunable through a single config object.",
         thumbnail: images.develoment5,
-        embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        embedUrl: "https://youtu.be/zkO9mQyxtAo?si=F0hAGz7ORaQrKFj_",
+      },
+      {
+        id: 4,
+        title: "Micro-interactions library",
+        description:
+          "A tour of the built-in micro-interaction presets — button feedback, pull-to-refresh, and loading states — all tunable through a single config object.",
+        thumbnail: images.develoment5,
+        embedUrl: "https://youtu.be/dQI767afn4Y?si=6nRBXRuUBGHOqHmD",
+      },
+      {
+        id: 5,
+        title: "Micro-interactions library",
+        description:
+          "A tour of the built-in micro-interaction presets — button feedback, pull-to-refresh, and loading states — all tunable through a single config object.",
+        thumbnail: images.develoment5,
+        embedUrl: "https://youtu.be/k6p7tO-Ui74?si=F4_2oCww_mDJaaKB",
       },
     ],
   },
