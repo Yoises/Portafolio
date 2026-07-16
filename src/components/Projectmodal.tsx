@@ -96,12 +96,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
           {/* Actions */}
           <div className="flex flex-col-reverse sm:flex-row gap-3 sm:justify-end">
-            <button
-              onClick={onClose}
-              className="px-6 py-3 rounded-full font-body text-sm border border-outline-variant/30 text-on-surface-variant hover:border-primary-container transition-colors"
-            >
-              Back
-            </button>
             <a
               href={project.link}
               target="_blank"
