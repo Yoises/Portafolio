@@ -2,6 +2,7 @@ import { useState } from "react";
 import { images } from "../constants/images";
 import ProjectModal from "./Projectmodal";
 import VideoCarouselModal, { type ProjectVideo } from "./Videocarouselmodal";
+import FigmaEmbedModal from "./FigmaEmbedModal";
 
 interface Project {
   id: number;
@@ -14,6 +15,11 @@ interface Project {
   type: "site" | "app" | "media";
   link: string;
   videos?: ProjectVideo[];
+  figmaEmbedUrl?: string;
+}
+
+function hasFigmaEmbed(p: Project): p is Project & { figmaEmbedUrl: string } {
+  return typeof p.figmaEmbedUrl === "string";
 }
 
 const projects: Project[] = [
@@ -125,6 +131,7 @@ const projects: Project[] = [
     category: "Media",
     type: "media",
     link: "#",
+    figmaEmbedUrl: "https://embed.figma.com/design/vBYva6Zu9iYGCxXcie0xPT/FINAL-PROJECT?node-id=0-1&embed-host=share",
   },
 ];
 
@@ -160,11 +167,10 @@ export default function Projects() {
           <button
             key={filter}
             onClick={() => setActiveFilter(filter)}
-            className={`px-6 py-2 rounded-full font-body text-sm transition-all duration-200 border ${
-              activeFilter === filter
-                ? "bg-primary-container text-on-primary-container border-transparent scale-105"
-                : "glass-card text-on-surface-variant border-outline-variant/30 hover:border-primary-container"
-            }`}
+            className={`px-6 py-2 rounded-full font-body text-sm transition-all duration-200 border ${activeFilter === filter
+              ? "bg-primary-container text-on-primary-container border-transparent scale-105"
+              : "glass-card text-on-surface-variant border-outline-variant/30 hover:border-primary-container"
+              }`}
           >
             {filter === "All" ? "All Projects" : filter}
           </button>
@@ -223,9 +229,14 @@ export default function Projects() {
           videos={selectedProject.videos}
           onClose={() => setSelectedProject(null)}
         />
+      ) : selectedProject && hasFigmaEmbed(selectedProject) ? (
+        <FigmaEmbedModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
       ) : (
-        <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
-      )}
+          <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+        )}
     </main>
   );
 }
