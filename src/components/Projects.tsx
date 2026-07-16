@@ -125,7 +125,7 @@ const projects: Project[] = [
   {
     id: 6,
     title: "Lumos",
-    description: "Este proyecto de diseño en Figma propone la interfaz de una app de aprendizaje de idiomas, pensada para acompañar al usuario desde su primer contacto con el idioma hasta un uso más avanzado. El flujo incluye pantallas de onboarding para definir idioma objetivo y nivel de partida, lecciones estructuradas en módulos progresivos, ejercicios interactivos de vocabulario y gramática, y un sistema de seguimiento de progreso con rachas y logros para reforzar el hábito de estudio diario. El sistema de diseño prioriza una jerarquía visual clara, componentes reutilizables y una experiencia fluida entre pantallas, con especial atención a la microinteracción y el feedback inmediato en los ejercicios.",
+    description: "Un diseño de interfaz para una aplicación de aprendizaje de idiomas. Explora la experiencia de usuario completa, desde la selección del idioma y el nivel inicial, hasta las lecciones interactivas, el seguimiento de progreso y los sistemas de gamificación que mantienen al usuario motivado día a día.",
     image: images.DesignLab,
     tags: ["Figma", "Mobile"],
     category: "Media",
