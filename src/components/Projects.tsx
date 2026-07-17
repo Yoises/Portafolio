@@ -60,7 +60,7 @@ const projects: Project[] = [
     tags: ["Web", "tailwind"],
     category: "Develoment",
     type: "site",
-    link: "#",
+    link: "https://protego-psi.vercel.app/",
   },
   {
     id: 4,
