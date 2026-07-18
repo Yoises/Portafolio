@@ -1,5 +1,9 @@
 import { images } from "../constants/images";
 
+const scrollToProjects = () => {
+  document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+};
+
 export default function Hero() {
     return (
         <section id="home" className="relative min-h-[90vh] flex flex-col items-center justify-center px-6 overflow-hidden">
@@ -31,7 +35,7 @@ export default function Hero() {
                 </div>
 
                 <div className="mt-12 flex flex-col md:flex-row items-center gap-6">
-                    <button className="px-8 py-3 bg-primary-container text-white font-body text-sm rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all">
+                    <button onClick={scrollToProjects} className="px-8 py-3 bg-primary-container text-white font-body text-sm rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all">
                         View Projects
                     </button>
                     <div className="flex items-center gap-4">
