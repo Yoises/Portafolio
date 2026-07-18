@@ -2,7 +2,7 @@ import profileImage from "../assets/image/profile.jpg";
 import aboutportrait from "../assets/image/aboutportrait.png";
 import circuitpath from "../assets/image/circuit-path.png";
 import develoment1 from "../assets/image/develoment1.png";
-import develoment2 from "../assets/image/circuit-path.png";
+import develoment2 from "../assets/image/develoment2.png";
 import develoment3 from "../assets/image/develoment3.png";
 import develoment4 from "../assets/image/develoment4.png";
 import develoment5 from "../assets/image/circuit-path.png";

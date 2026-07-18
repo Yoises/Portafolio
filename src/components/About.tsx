@@ -14,6 +14,16 @@ const timeline: TimelineItem[] = [
   { role: "Volunteer — Social Media & Multimedia", company: "Youth Promotion Encounter Movement (MEPJ) — Venezuela", period: "2018 - 2020" },
 ];
 
+
+const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = "/Yoises_Molina_CV.pdf";
+  link.download = "Yoises_Molina_CV.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
 const skills: string[] = ["React.js", "TypeScript", "Tailwind CSS", "TypeScript", "Node.js", "Git"];
 
 export default function About() {
@@ -122,7 +132,7 @@ export default function About() {
               </div>
 
               <div className="mt-10 pt-8 border-t border-outline-variant/30">
-                <button className="w-full py-4 rounded-xl bg-primary-container text-on-primary-container font-headline flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary-container/20">
+                <button onClick={handleDownload} className="w-full py-4 rounded-xl bg-primary-container text-on-primary-container font-headline flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary-container/20">
                   Download CV
                   <span className="material-symbols-outlined">download</span>
                 </button>

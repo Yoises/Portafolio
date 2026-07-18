@@ -8,12 +8,13 @@ import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import VideoBackground from "./components/VideoBg";
+import FadeIn from "./components/FadeIn";
 
 
 function App() {
   const [isDark, setIsDark] = useState<boolean>(true);
 
-  
+
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDark);
   }, [isDark]);
@@ -26,11 +27,21 @@ function App() {
       <Navbar isDark={isDark} toggleTheme={toggleTheme} />
       <main className="relative pt-16">
         <Hero />
-        <Skills />
-        <Certifications />
-        <Projects />
-        <About />
-        <Contact />
+        <FadeIn>
+          <Skills />
+        </FadeIn>
+        <FadeIn>
+          <Certifications />
+        </FadeIn>
+        <FadeIn>
+          <Projects />
+        </FadeIn>
+        <FadeIn>
+          <About />
+        </FadeIn>
+        <FadeIn>
+          <Contact />
+        </FadeIn>
       </main>
       <Footer />
     </div>

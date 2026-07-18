@@ -72,6 +72,7 @@ export default function Skills() {
 
       {/* Categories */}
       {categories.map((category) => (
+        
         <div key={category.title} className="mt-8">
           <div className="flex items-center gap-3 pb-2 pt-4">
             <span className="material-symbols-outlined text-primary-container">

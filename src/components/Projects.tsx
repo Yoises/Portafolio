@@ -47,7 +47,7 @@ const projects: Project[] = [
     tags: ["Web", "AI"],
     category: "Develoment",
     type: "site",
-    link: "#",
+    link: "https://philosopering.vercel.app/",
   },
   {
     id: 3,
@@ -73,7 +73,7 @@ const projects: Project[] = [
     tags: ["Mobile", "Expo Go"],
     category: "Develoment",
     type: "app",
-    link: "#",
+    link: "https://expo.dev/accounts/yoicar13/projects/Salve/builds/e6453ab5-bf69-4c8b-ad1c-60b98e883234",
   },
   {
     id: 5,
