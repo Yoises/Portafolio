@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-surface-container-lowest border-t border-outline-variant/20 w-full">
       <div className="flex flex-col md:flex-row justify-between items-center w-full px-6 max-w-[1200px] mx-auto gap-4 py-8">
         <div className="flex flex-col items-center md:items-start gap-2">
-          <span className="font-headline text-lg text-on-surface">Portfolio.dev</span>
+          <span className="font-headline text-lg text-on-surface">Portfolio</span>
           <p className="font-body text-xs text-on-surface-variant opacity-70">
             © 2026 Portfolio. Built with precision.
           </p>
