@@ -40,7 +40,7 @@ export default function Hero() {
                     </button>
                     <div className="flex items-center gap-4">
                         <a
-                            href="#"
+                            href="https://www.linkedin.com/in/yoises-miguel-carrizales-molina-532250275"
                             className="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant/30 text-on-surface hover:text-primary hover:border-primary transition-all"
                         >
                             <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
@@ -48,7 +48,7 @@ export default function Hero() {
                             </svg>
                         </a>
                         <a
-                            href="#"
+                            href="https://github.com/Yoises"
                             className="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant/30 text-on-surface hover:text-primary hover:border-primary transition-all"
                         >
                             <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ export default function Hero() {
                             </svg>
                         </a>
                         <a
-                            href="mailto:contact@portfolio.dev"
+                            href="mailto:ycarrizales0243@gmail.com"
                             className="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant/30 text-on-surface hover:text-primary hover:border-primary transition-all"
                         >
                             <span className="material-symbols-outlined">mail</span>

@@ -120,6 +120,21 @@ const projects: Project[] = [
           "Product animation created in Blender for a fictional beverage brand, King, showcasing a refreshing drink through 3D modeling, lighting, and rendering to capture the look and appeal of the product — condensation, liquid shading, and material work built to sell the sense of a cold, refreshing drink. The rendered footage was then brought into After Effects for final editing, color grading, and compositing to polish the sequence into a finished piece.",
         embedUrl: "https://www.youtube.com/watch?v=k6p7tO-Ui74",
       },
+      {
+        id: 6,
+        title: "How's it in spanish",
+        description:
+          "The introduction to the How's It in Spanish YouTube channel features a short and engaging animation designed to establish the channel's visual identity and create a professional first impression. Created using Adobe After Effects and edited in Adobe Premiere Pro, it combines motion graphics, smooth transitions, and visual effects to deliver an attractive opening that introduces the channel before the main educational content begins.",
+        embedUrl: "https://www.youtube.com/watch?v=fie1vacBuBU",
+      },
+      {
+        id: 7,
+        title: "How's it in spanish",
+        description:
+          "This video presents an approach to teaching the Spanish language through the use of audiovisual resources created with Adobe Premiere Pro and Adobe After Effects. By integrating professional video editing, motion graphics, and animation techniques, it delivers a clear, dynamic, and visually engaging learning experience. The combination of these multimedia elements enhances the presentation of educational content, making it more interactive, accessible, and appealing while maintaining a professional and modern visual style.",
+        embedUrl: "https://www.youtube.com/watch?v=6IUT7zueJGI",
+      },
+      
     ],
   },
   {

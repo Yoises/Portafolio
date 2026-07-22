@@ -14,7 +14,7 @@ const links = [
   { label: "Contact", id: "contact" },
 ];
 
-export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
+export default function Navbar({ /*isDark, toggleTheme */ }: NavbarProps) {
   const [activeSection, setActiveSection] = useState<string>("home");
 
   useEffect(() => {
@@ -65,7 +65,8 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
         </div>
 
         <div className="flex items-center gap-4">
-          <button
+          {/*
+            <button
             onClick={toggleTheme}
             className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-variant/20 transition-all active:scale-95"
           >
@@ -76,6 +77,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
           <button className="md:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-variant/20 transition-all active:scale-95">
             <span className="material-symbols-outlined text-on-surface">menu</span>
           </button>
+          */}
         </div>
       </div>
     </nav>

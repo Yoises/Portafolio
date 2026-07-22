@@ -26,7 +26,9 @@ function App() {
       <VideoBackground />
       <Navbar isDark={isDark} toggleTheme={toggleTheme} />
       <main className="relative pt-16">
-        <Hero />
+        <FadeIn>
+          <Hero />
+        </FadeIn>
         <FadeIn>
           <Skills />
         </FadeIn>
