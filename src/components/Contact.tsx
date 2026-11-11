@@ -110,7 +110,7 @@ export default function Contact() {
                     id="name"
                     name="name"
                     type="text"
-                    placeholder="Jane Doe"
+                    placeholder="Yoises Molina"
                     required
                     value={formData.name}
                     onChange={handleChange}
@@ -131,7 +131,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="jane@example.com"
+                    placeholder="yoises@example.com"
                     required
                     value={formData.email}
                     onChange={handleChange}
