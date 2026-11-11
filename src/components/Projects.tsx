@@ -150,9 +150,9 @@ const projects: Project[] = [
   },
 ];
 
-type FilterType = "All" | "Media" | "Develoment";
+type FilterType = "All" | "Media" | "Development";
 
-const filters: FilterType[] = ["All", "Media", "Develoment"];
+const filters: FilterType[] = ["All", "Media", "Development"];
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<FilterType>("All");
