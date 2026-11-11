@@ -58,9 +58,9 @@ export default function Skills() {
       <div className="flex flex-wrap justify-between gap-3 mb-4">
         <div className="flex min-w-72 flex-col gap-3">
           <h2 className="font-headline text-4xl md:text-5xl font-black leading-tight tracking-tight text-on-surface">
-            Technical{" "}
+            S{""}
             <span className="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent">
-              Excellence
+              kills
             </span>
           </h2>
           <p className="text-on-surface-variant text-lg font-body max-w-xl">
