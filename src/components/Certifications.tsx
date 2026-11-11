@@ -5,7 +5,7 @@ interface Certification {
   icon: string;
 }
 
-const certifications: Certification[] = [
+const certifications: Certification[] = [ 
   {
     title: "Multimedia Engineering",
     institution: "Instituto Superior de Tecnologias Avançadas",
