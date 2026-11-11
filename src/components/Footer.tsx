@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start gap-2">
           <span className="font-headline text-lg text-on-surface">Portfolio</span>
           <p className="font-body text-xs text-on-surface-variant opacity-70">
-            © 2026 Portfolio. Built with precision.
+            © 2026 Portafolio. Built with precision.
           </p>
         </div>
         <div className="flex items-center gap-6">
