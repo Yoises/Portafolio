@@ -10,7 +10,7 @@ import DesignLab from "../assets/image/DesignLab.png";
 
 export const images = {
      profile:  profileImage,
-     aboutportrait: aboutportrait,
+     aboutportrait: aboutportrait, 
      circuitpath: circuitpath,
      develoment1:development1,
      develoment2:development2,
