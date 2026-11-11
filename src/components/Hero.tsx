@@ -30,7 +30,7 @@ export default function Hero() {
                         Chemist & Multimedia Engineer | E-learning and Frontend Development
                     </p>
                     <p className="font-body text-lg text-on-surface-variant/80 max-w-xl mx-auto leading-relaxed">
-                        Building high-fidelity digital experiences with precision, minimal aesthetics, and technical excellence.
+                        I combine a science background with web development and interface design to build clear, useful learning experiences.
                     </p>
                 </div>
 
