@@ -64,8 +64,7 @@ export default function Skills() {
             </span>
           </h2>
           <p className="text-on-surface-variant text-lg font-body max-w-xl">
-            I specialize in building high-performance web applications using modern
-            frameworks and cloud-native tools.
+            I build web and mobile projects with React, TypeScript and Firebase, and design interfaces in Figma.
           </p>
         </div>
       </div>
