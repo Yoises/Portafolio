@@ -45,7 +45,7 @@ export default function Navbar({ /*isDark, toggleTheme */ }: NavbarProps) {
     <nav className="fixed top-0 w-full bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm z-50">
       <div className="flex justify-between items-center w-full px-6 max-w-[1200px] mx-auto h-16">
         <div className="font-headline text-2xl font-bold text-on-background">
-          Portafolio
+          Yoises Molina
         </div>
 
         <div className="hidden md:flex items-center gap-8">
