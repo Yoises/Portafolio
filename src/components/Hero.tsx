@@ -27,7 +27,7 @@ export default function Hero() {
                         Yoises Molina
                     </h1>
                     <p className="font-headline text-2xl text-on-surface-variant max-w-2xl mx-auto">
-                        Multimedia Designer & Frontend Developer
+                        Chemist & Multimedia Engineer | E-learning and Frontend Development
                     </p>
                     <p className="font-body text-lg text-on-surface-variant/80 max-w-xl mx-auto leading-relaxed">
                         Building high-fidelity digital experiences with precision, minimal aesthetics, and technical excellence.
