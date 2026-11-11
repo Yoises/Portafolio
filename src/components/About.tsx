@@ -1,6 +1,6 @@
 import { images } from "../constants/images";
 
- interface TimelineItem {
+ interface TimelineItem { 
   role: string;
   company: string;
   period: string;
