@@ -9,7 +9,7 @@ interface TimelineItem {
 
 const timeline: TimelineItem[] = [
   { role: "Customer Service Representative ", company: "Teleperformance", period: "2025 - Present", current: true },
-  { role: "Sales Associate", company: "Meia Dúzia — Lisbon, Portugal", period: "2023 - 2025" },
+  { role: "Tasting and Customer Service Associate", company: "Meia Dúzia — Lisbon, Portugal", period: "2022 - 2024" },
   { role: "Virtual Classroom Designer & Chemistry Instructor ", company: "Instituto Universitario de Aeronáutica Civil — Venezuela", period: "2018 - 2022" },
   { role: "Volunteer — Social Media & Multimedia", company: "Youth Promotion Encounter Movement (MEPJ) — Venezuela", period: "2018 - 2020" },
 ];
@@ -17,8 +17,8 @@ const timeline: TimelineItem[] = [
 
 const handleDownload = () => {
   const link = document.createElement("a");
-  link.href = "/Yoises_Molina_CV.pdf";
-  link.download = "Yoises_Molina_CV.pdf";
+  link.href = "/Yoises_Carrizales_CV_Elearning.pdf";
+  link.download = "Yoises_Carrizales_CV_Elearning.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
