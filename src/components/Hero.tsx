@@ -4,7 +4,7 @@ const scrollToProjects = () => {
   document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
 };
 
-export default function Hero() {
+export default function Hero() { 
     return (
         <section id="home" className="relative min-h-[90vh] flex flex-col items-center justify-center px-6 overflow-hidden">
             <div className="relative z-10 max-w-4xl w-full flex flex-col items-center text-center">
