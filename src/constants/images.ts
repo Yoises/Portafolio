@@ -18,5 +18,4 @@ export const images = {
      development4:development4,
      MotionLab: MotionLab,
      DesignLab: DesignLab,
-
 };
