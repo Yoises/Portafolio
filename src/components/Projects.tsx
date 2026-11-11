@@ -11,7 +11,7 @@ interface Project {
   fullDescription?: string;
   image: string;
   tags: string[];
-  category: "Develoment" | "Media";
+  category: "Development" | "Media";
   type: "site" | "app" | "media";
   link: string;
   videos?: ProjectVideo[];
