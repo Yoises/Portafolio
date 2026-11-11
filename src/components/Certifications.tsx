@@ -8,7 +8,7 @@ interface Certification {
 const certifications: Certification[] = [
   {
     title: "Multimedia Engineering",
-    institution: "Amazon Web Services (AWS)",
+    institution: "Instituto Superior de Tecnologias Avançadas",
     date: "Aug 2026",
     icon: "code_blocks",
   },
