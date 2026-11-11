@@ -24,7 +24,7 @@ const handleDownload = () => {
   document.body.removeChild(link);
 };
 
-const skills: string[] = ["React.js", "TypeScript", "Tailwind CSS", "TypeScript", "Node.js", "Git"];
+const skills: string[] = ["React.js", "TypeScript", "Tailwind CSS", "JavaScript", "Node.js", "Git"];
 
 export default function About() {
   return (
