@@ -63,7 +63,7 @@ export default function Skills() {
               kills
             </span>
           </h2>
-          <p className="text-on-surface-variant text-lg font-body max-w-xl">
+          <p className="text-on-surface-variant text-lg font-body max-w-xl"> 
             I build web and mobile projects with React, TypeScript and Firebase, and design interfaces in Figma.
           </p>
         </div>
