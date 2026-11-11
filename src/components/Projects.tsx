@@ -30,7 +30,7 @@ const projects: Project[] = [
       "A one-page website for a fictional gym. Clean, energetic landing page showcasing membership plans, class schedules, and trainer profiles — built to convert visitors into sign-ups.",
     fullDescription:
       "Befitness is a single-page website built for a fictional gym brand. The page walks visitors through membership tiers, weekly class schedules, and trainer bios, closing with a clear sign-up call to action. Built with React and Bootstrap, with a focus on fast load times and a layout that reads clearly on mobile, where most gym sign-ups happen.",
-    image: images.develoment1,
+    image: images.development1,
     tags: ["React", "Bootstrap"],
     category: "Development",
     type: "site",
@@ -43,7 +43,7 @@ const projects: Project[] = [
       "An AI-powered entertainment platform. Combines AI-driven content with an interactive experience, blending philosophy and entertainment into an engaging application.",
     fullDescription:
       "Philosopher is an AI-powered entertainment platform that turns philosophical ideas into interactive, conversational experiences. Users can explore different schools of thought, debate positions with an AI persona, and get bite-sized explanations of complex concepts — built as a web app with an emphasis on engaging, readable AI-generated content.",
-    image: images.develoment2,
+    image: images.development2,
     tags: ["Web", "AI"],
     category: "Development",
     type: "site",
@@ -56,7 +56,7 @@ const projects: Project[] = [
       "A landing page for an insurance company. Trust-focused design highlighting coverage plans, quote requests, and customer testimonials, aimed at converting leads into policyholders.",
     fullDescription:
       "Protego is a landing page for a fictional insurance company. The design leans on trust signals — clear coverage breakdowns, a simple quote request flow, and customer testimonials — to move visitors from browsing to requesting a quote. Built with React and Tailwind CSS for a fast, componentized, easily themeable layout.",
-    image: images.develoment3,
+    image: images.development3,
     tags: ["Web", "tailwind"],
     category: "Development",
     type: "site",
@@ -69,7 +69,7 @@ const projects: Project[] = [
       "A faith-based community app for prayer groups. Connects members of religious communities, enabling group prayer coordination, event scheduling, and spiritual engagement.",
     fullDescription:
       "Salve is a mobile app that connects members of religious communities around shared prayer. Groups can coordinate prayer sessions, schedule community events, and stay engaged with their congregation between in-person meetings. Built with Expo Go for fast cross-platform delivery on iOS and Android.",
-    image: images.develoment4,
+    image: images.development4,
     tags: ["Mobile", "Expo Go"],
     category: "Development",
     type: "app",
