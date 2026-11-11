@@ -10,7 +10,7 @@ const certifications: Certification[] = [
     title: "Multimedia Engineering",
     institution: "Instituto Superior de Tecnologias Avançadas",
     date: "Aug 2026",
-    icon: "code_blocks",
+    icon: "code_blocks", 
   },
   {
     title: "Chemistry",
