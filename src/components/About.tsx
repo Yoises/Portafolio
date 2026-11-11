@@ -52,7 +52,7 @@ export default function About() {
                 <span className="font-body text-xs text-primary-container uppercase tracking-wide">
                   Languages
                 </span>
-                <span className="font-body text-base text-on-surface">Spanish, Portuguese, English, French</span>
+                <span className="font-body text-base text-on-surface">Spanish (C2), Portuguese (C1), English(B2), French(B1)</span>
               </div>
               <div className="flex flex-col gap-1">
                 <span className="font-body text-xs text-primary-container uppercase tracking-wide">
